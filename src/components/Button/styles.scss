@@ -1,0 +1,17 @@
+.btn-primary{
+   all: unset;
+
+   padding: 1.37rem 3.37rem;
+
+   border-radius: 1rem;
+
+   background-color: var(--green-100);
+
+   color: #111111;
+
+   font-family: var(--font-secondary);
+   font-weight: var(--font-weight-medium);
+   font-size: var(--size-extra-small);
+
+   cursor: pointer;
+}

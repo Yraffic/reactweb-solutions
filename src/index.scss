@@ -2,8 +2,8 @@
   --color-background: #1B1B1B;
   --color-font-primary: #F6F6F6;
   --color-font-secondary: #969696;
-  --color-gradient: linear-gradient(90deg, #3FE8AB 0%, #78CDCD 100%);
-  --color-blur: #35AB82;
+  --green-100: #3FE8AB;
+  --color-blur: #35ab82;
 
   --font-primary: "Inter", sans-serif;
   --font-secondary: "Lato", sans-serif;
@@ -28,13 +28,15 @@
 }
 
 body {
+  position: relative;
   background-color: var(--color-background);
   font-family: var(--font-primary);
   color: var(--color-font-primary);
+  overflow-x: hidden;
 
   h1 {
     font-weight: var(--font-weight-regular);
-    font-size: var(--size-extra-large);
+    font-size: var(--size-large);
   }
 
   h2 {
@@ -64,4 +66,17 @@ body {
   a:hover{
     color: var(--color-blur);
   }
+}
+
+.flex{
+  display: flex;
+}
+.align-items{
+  align-items: center
+}
+.justify-content{
+  justify-content: center;
+}
+.flex-direction{
+  flex-direction: column;
 }
