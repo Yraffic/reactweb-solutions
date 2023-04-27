@@ -14,7 +14,8 @@ export const Header = () => {
         />
         <a href="#">Home</a>
         <a href="#">Sobre nós</a>
-        <a href="#">Projetos</a>
+        <a href="#">Serviços</a>
+        <a href="#">Fale Conosco</a>
         <div></div>
       </nav>
       <div className='conteiner-info flex'>
@@ -29,10 +30,8 @@ export const Header = () => {
           </h1>
           <p>
             Nossa empresa é especializada em criar soluções online sob medida para nossos clientes. Oferecemos serviços de desenvolvimento de sites, 
-            web aplicações e landing pages personalizados para atender às suas necessidades específicas. Com a nossa equipe de desenvolvedores experientes e dedicados, 
-            garantimos que sua presença online seja de primeira classe. Além disso, trabalhamos em estreita colaboração com nossos clientes para garantir que a solução atenda às suas expectativas e 
-            requisitos exclusivos. Se você deseja criar um site impressionante, 
-            uma aplicação online complexa ou uma landing page eficaz, temos a expertise para ajudá-lo a alcançar seus objetivos online.
+            web aplicações e landing pages personalizados para atender às suas necessidades específicas.Trabalhamos em estreita colaboração com nossos clientes para garantir que a solução atenda às suas expectativas e 
+            requisitos exclusivos. 
           </p>
          <Button />
         </div>
