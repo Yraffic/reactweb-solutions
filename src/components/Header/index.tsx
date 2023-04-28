@@ -29,11 +29,13 @@ export const Header = () => {
             Facilite seu desenvolvimento web.
           </h1>
           <p>
-            Nossa empresa é especializada em criar soluções online sob medida para nossos clientes. Oferecemos serviços de desenvolvimento de sites, 
-            web aplicações e landing pages personalizados para atender às suas necessidades específicas.Trabalhamos em estreita colaboração com nossos clientes para garantir que a solução atenda às suas expectativas e 
-            requisitos exclusivos. 
+            Nossa empresa é especializada em criar soluções online sob medida e exclusiva para nossos clientes.
+            Deseja desenvolver um site para sua empresa? Programas, Aplicativos
+            ou landing pages? Criamos!
           </p>
-         <Button />
+          <Button>
+            Contato
+          </Button>
         </div>
       </div>
     </header>
