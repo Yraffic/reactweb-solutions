@@ -2,6 +2,8 @@
   --color-background: #1B1B1B;
   --color-font-primary: #F6F6F6;
   --color-font-secondary: #969696;
+  --black-100: #383F3E;
+  --black-200: #151515;
   --green-100: #3FE8AB;
   --color-blur: #35ab82;
 
@@ -35,12 +37,12 @@ body {
   overflow-x: hidden;
 
   h1 {
-    font-weight: var(--font-weight-regular);
+    font-weight: var(--font-weight-bold);
     font-size: var(--size-large);
   }
 
   h2 {
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-medium);
     font-size: var(--size-large);
   }
 
