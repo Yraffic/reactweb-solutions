@@ -69,7 +69,18 @@ body {
     color: var(--color-blur);
   }
 }
+::-webkit-scrollbar {
+  width: 0.5rem;               
+}
 
+::-webkit-scrollbar-track {
+  background: #00000000;       
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--black-100);   
+  border-radius: 2rem;      
+}
 .flex{
   display: flex;
 }
