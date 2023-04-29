@@ -1,15 +1,14 @@
 header {
     padding: 0 2rem;
-    height: 95vh;
+    height: 90vh;
 
-    border-bottom: 0.02rem solid #80808038;
     .conteiner-nav {
         width: 100vw;
         
-        background-color: var(--color-background);
+        background-color: #0000000e;
         justify-content: space-between;
         gap: 2.5rem;
-        padding: 1rem 8rem;
+        padding: 1rem 8rem; 
 
         position: fixed;
         top: 0;

@@ -7,34 +7,61 @@ export const Home = () => {
   return (
     <div >
       <Header />
-      <section id='about'>
-        <div
-          className='
-      about 
-      flex 
-      align-items 
-      justify-content 
-      flex-direction'
-        >
-          <h2>Nossa empresa</h2>
-          <p>
-            A ReactWeb Solutions é capaz de criar e projetar soluções de software
-            para uma ampla variedade de clientes e aplicativos. Além de ser especializada em desenvolvimento de software,
-            a sua empresa também se destaca por utilizar as melhores técnicas de desenvolvimento SEO, performance e exclusividade.
-          </p>
-          <div className='
-        about-cards 
-        flex
-        align-items 
-        justify-content'
+      <main id='information'>
+        <section id='about'>
+          <div
+            className='
+              conteiner 
+              flex 
+              align-items 
+              justify-content 
+              flex-direction'
           >
-            <Card />
-            <Card />
-            <Card />
+            <h2>Nossa empresa</h2>
+            <p>
+              A ReactWeb Solutions é capaz de criar e projetar soluções de software
+              para uma ampla variedade de clientes e aplicativos. Além de ser especializada em desenvolvimento de software,
+              a sua empresa também se destaca por utilizar as melhores técnicas de desenvolvimento SEO, performance e exclusividade.
+            </p>
+            <div className='
+              about-cards 
+              flex
+              align-items 
+              justify-content'
+            >
+              <Card type='primary'/>
+              <Card type='primary'/>
+              <Card type='primary'/>
+            </div>
           </div>
-        </div>
-      </section>
-      
+        </section>
+        <section 
+          id='services'
+        >
+          <div 
+            className='
+            conteiner
+            flex 
+            align-items 
+            justify-content 
+            flex-direction
+            '
+            >
+            <h2>Serviços</h2>
+            <div className='
+                  conteiner-services 
+                  flex
+                  align-items
+                  '
+              >
+              <Card type='secondary'/>
+              <Card type='secondary'/>
+              <Card type='secondary'/>
+            </div>
+          </div>
+        </section>
+      </main>
+
     </div>
   );
 }

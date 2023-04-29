@@ -1,11 +1,11 @@
-import { ButtonProps } from '../../types';
+import { IButtonProps } from '../../types';
 import './styles.scss';
 
 export const Button = (
   { children,
     type,
     ...props
-  }: ButtonProps) => {
+  }: IButtonProps) => {
    
 
   return (

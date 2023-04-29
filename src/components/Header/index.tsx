@@ -13,8 +13,8 @@ export const Header = () => {
           alt='logo'
         />
         <a href="#">Home</a>
-        <a href="#about">Sobre nós</a>
-        <a href="#">Serviços</a>
+        <a href="#information">Sobre nós</a>
+        <a href="#services">Serviços</a>
         <a href="#">Fale Conosco</a>
         <div></div>
       </nav>

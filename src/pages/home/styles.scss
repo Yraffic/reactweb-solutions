@@ -1,14 +1,28 @@
-.about{
-    width: 100vw;
-    padding: 2rem;
-    gap: 2rem;
+main{
+    section{
+        height: 100vh;
     
-    p{
-        width: 85%;
+        h2{
+            margin-top: 2rem;
+        }
     }
-    .about-cards{
-        gap: 3rem;
+    .conteiner{
+        width: 100vw;
+        padding: 2rem;
+        gap: 2rem;
         
+        p{
+            width: 85%;
+        }
+        .about-cards{
+            gap: 3rem;
+        }
+    
     }
 
+    .conteiner-services{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
 }
