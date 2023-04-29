@@ -1,0 +1,17 @@
+.forms {
+    width: 50%;
+    gap: 1rem;
+
+    input, textarea {
+        width: 100%;
+        
+        padding: 1.5rem 2rem;
+
+        text-align: start;
+        color: var(--color-font-secondary);
+
+        background: var(--black-200);
+        border: 0.15rem solid var(--black-100);
+        border-radius: 0.8rem;
+    }
+}

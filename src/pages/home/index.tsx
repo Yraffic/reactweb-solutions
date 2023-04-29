@@ -1,4 +1,5 @@
 import { Card } from '../../components/Card';
+import { Forms } from '../../components/Form';
 import { Header } from '../../components/Header';
 import './styles.scss'
 
@@ -29,16 +30,16 @@ export const Home = () => {
               align-items 
               justify-content'
             >
-              <Card type='primary'/>
-              <Card type='primary'/>
-              <Card type='primary'/>
+              <Card type='primary' />
+              <Card type='primary' />
+              <Card type='primary' />
             </div>
           </div>
         </section>
-        <section 
+        <section
           id='services'
         >
-          <div 
+          <div
             className='
             conteiner
             flex 
@@ -46,18 +47,32 @@ export const Home = () => {
             justify-content 
             flex-direction
             '
-            >
+          >
             <h2>Serviços</h2>
             <div className='
                   conteiner-services 
                   flex
                   align-items
                   '
-              >
-              <Card type='secondary'/>
-              <Card type='secondary'/>
-              <Card type='secondary'/>
+            >
+              <Card type='secondary' />
+              <Card type='secondary' />
+              <Card type='secondary' />
             </div>
+          </div>
+        </section>
+        <section id='contact'>
+          <div className='
+                conteiner
+                flex 
+                align-items 
+                justify-content 
+                flex-direction
+          '
+          >
+            <h2>Fale Conosco</h2>
+            <h3>E daremos sua solução!</h3>
+            <Forms />
           </div>
         </section>
       </main>
