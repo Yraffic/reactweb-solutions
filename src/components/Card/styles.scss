@@ -6,11 +6,32 @@
     border: 0.25rem solid var(--black-100);
 
     border-radius: 3.75rem;
-    padding: 0.5rem;
+    padding: 2rem;
+    gap: 1rem;
+
+    .card-circle{
+        width: 9rem;
+        height: 9rem;
+
+        background-color: var(--green-200);
+        padding: 1rem;
+
+        border-radius: 50%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        h3{
+            font-size: var(--size-small);
+            color: var(--green-100);
+        }
+    }
 
     p {
-        height: 80%;
-        overflow: auto;
+        display: -webkit-box;
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        -webkit-line-clamp: 3; 
+        -webkit-box-orient: vertical;
     }  
 
     -webkit-box-shadow: 108px -6px 168px 0px rgba(53, 171, 130, 0.158);

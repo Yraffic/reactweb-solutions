@@ -1,9 +1,15 @@
 import { ButtonProps } from '../../types';
-import './styles.scss'
+import './styles.scss';
 
-export const Button = ({children, ...props }: ButtonProps) => {
+export const Button = (
+  { children,
+    type,
+    ...props
+  }: ButtonProps) => {
+   
+
   return (
-    <button className='btn-primary' {...props}>
+    <button className={`btn ${type}`} {...props}>
       {children}
     </button>
   );

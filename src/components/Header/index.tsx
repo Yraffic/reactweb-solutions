@@ -13,7 +13,7 @@ export const Header = () => {
           alt='logo'
         />
         <a href="#">Home</a>
-        <a href="#">Sobre nós</a>
+        <a href="#about">Sobre nós</a>
         <a href="#">Serviços</a>
         <a href="#">Fale Conosco</a>
         <div></div>
@@ -33,7 +33,7 @@ export const Header = () => {
             Deseja desenvolver um site para sua empresa? Programas, Aplicativos
             ou landing pages? Criamos!
           </p>
-          <Button>
+          <Button type='primary'>
             Contato
           </Button>
         </div>

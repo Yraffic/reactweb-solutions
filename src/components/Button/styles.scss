@@ -1,20 +1,35 @@
-.btn-primary{
+.btn{
    all: unset;
 
-   padding: 1.37rem 3.37rem;
+   padding: 1rem 3.37rem;
 
    border-radius: 1rem;
-
-   background-color: var(--green-100);
 
    color: #111111;
 
    font-family: var(--font-secondary);
-   font-weight: var(--font-weight-medium);
+   font-weight: var(--font-weight-regular);
    font-size: var(--size-extra-small);
 
    cursor: pointer;
 }
-.btn-primary:hover {
+
+.btn:hover {
    opacity: 0.8;
 }
+
+.primary{
+   background-color: var(--green-100);
+}
+
+.secondary{
+   color: white;
+
+   border: 0.12rem solid var(--green-200);
+}
+
+.secondary:hover{
+   background-color: var(--green-100);
+   color: #111111;
+}
+
