@@ -1,4 +1,5 @@
 import { Card } from '../../components/Card';
+import { Footer } from '../../components/Footer';
 import { Forms } from '../../components/Form';
 import { Header } from '../../components/Header';
 import './styles.scss'
@@ -76,7 +77,7 @@ export const Home = () => {
           </div>
         </section>
       </main>
-
+      <Footer />
     </div>
   );
 }

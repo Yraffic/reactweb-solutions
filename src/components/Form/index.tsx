@@ -11,6 +11,7 @@ export const Forms = () =>{
                 forms
         '
         >
+            <div className='blur'></div>
             <input type="text" placeholder='Seu Nome ou Empresa'/>
             <input type="email" placeholder='Email'/>
             <input type="number" placeholder='DD + Numero'/>

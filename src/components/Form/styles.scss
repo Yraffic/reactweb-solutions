@@ -2,6 +2,8 @@
     width: 50%;
     gap: 1rem;
 
+    position: relative;
+
     input, textarea {
         width: 100%;
         
@@ -13,5 +15,11 @@
         background: var(--black-200);
         border: 0.15rem solid var(--black-100);
         border-radius: 0.8rem;
+
+        -webkit-box-shadow: 108px -6px 168px 0px rgba(53, 171, 130, 0.149);
+        -moz-box-shadow: 108px -6px 168px 0px rgba(53, 171, 130, 0.137);
+        box-shadow: 108px -6px 168px 0px rgba(53, 171, 130, 0.039);
+
     }
+    
 }
