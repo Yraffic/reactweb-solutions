@@ -6,4 +6,6 @@ import { Home } from './pages/home';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
-root.render(<Home />);
+root.render(
+<Home />
+);

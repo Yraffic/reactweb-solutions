@@ -2,8 +2,17 @@ import './styles.scss'
 import logoSimple from '../../assets/logoSimple.svg'
 import logo from '../../assets/logo.svg'
 import { Button } from '../Button'
+import { HamburgerIcon } from '@chakra-ui/icons'
+import { useState } from 'react'
+import { motion } from 'framer-motion'
 
 export const Header = () => {
+  const [showNavbarMobile, setShowNavbarMobile] = useState(false)
+
+  const showNav = () => {
+    setShowNavbarMobile(!showNavbarMobile)
+  }
+
   return (
     <header className='flex align-items justify-content flex-direction'>
       <nav className='conteiner-nav flex align-items'>
@@ -12,17 +21,53 @@ export const Header = () => {
           src={logoSimple}
           alt='logo'
         />
-        <a href="#">Home</a>
-        <a href="#information">Sobre nós</a>
-        <a href="#services">Serviços</a>
-        <a href="#contact">Fale Conosco</a>
-        <div></div>
+        <div className='hidden-desktop flex'>
+          <a href="#">Home</a>
+          <a href="#information">Sobre nós</a>
+          <a href="#services">Serviços</a>
+          <a href="#contact">Fale Conosco</a>
+        </div>
+
+        <div className='hidden-mobile flex flex-direction'>
+          <HamburgerIcon
+            className='navbar-icon-mobile'
+            onClick={showNav}
+          />
+          {showNavbarMobile &&
+
+            <motion.nav
+              className='navbar-mobile flex flex-direction'
+              onClick={showNav}
+              initial={{ right: "40rem" }}
+              animate={{ right: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 260,
+                damping: 20
+              }}
+            >
+              <a href="#">Home</a>
+              <a href="#information">Sobre nós</a>
+              <a href="#services">Serviços</a>
+              <a href="#contact">Fale Conosco</a>
+            </motion.nav>
+          }
+        </div>
       </nav>
-      <div className='conteiner-info flex'>
+      <div className='conteiner-infos flex justify-content'>
         <div className='flex align-items justify-content'>
-          <div className="circle flex align-items justify-content">
+          <motion.div
+            className="circle flex align-items justify-content"
+            initial={{ scale: 0 }}
+            animate={{ rotate: 360, scale: 1 }}
+            transition={{
+              type: "spring",
+              stiffness: 560,
+              damping: 60
+            }}
+          >
             <img src={logo} alt="logo react web" />
-          </div>
+          </motion.div>
         </div>
         <div className='info flex flex-direction'>
           <h1>

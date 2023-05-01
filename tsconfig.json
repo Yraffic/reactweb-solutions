@@ -23,5 +23,5 @@
   "include": [
     "src",
     "custom.d.ts"
-  ]
+, "home"  ]
 }
