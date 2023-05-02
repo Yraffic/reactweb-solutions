@@ -58,13 +58,19 @@ export const Header = () => {
         <div className='flex align-items justify-content'>
           <motion.div
             className="circle flex align-items justify-content"
-            initial={{ scale: 0 }}
-            animate={{ rotate: 360, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 560,
-              damping: 60
+            animate={{
+              scale: [1, 1.2, 1, 1.2, 1],
+              rotate: [0, 0, 270, 270, 0],
+              borderRadius: ["50%", "50%", "50%", "50%", "50%"],
             }}
+            
+            transition={{
+              duration: 3,
+              ease: "easeInOut",
+              repeat: Infinity,
+              repeatType: "loop",
+            }}
+
           >
             <img src={logo} alt="logo react web" />
           </motion.div>
