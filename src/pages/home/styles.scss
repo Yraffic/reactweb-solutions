@@ -52,4 +52,16 @@ main{
         justify-content: center;
         gap: 2rem;
     }
+
+    @include regular{
+        #contact{
+            h2{
+                font-size: var(--size-regular);
+                font-weight: var(--font-weight-bold);
+            }
+            h3{
+                font-size: var(--size-small);
+            }
+        }
+    }
 }
