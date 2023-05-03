@@ -15,7 +15,7 @@ export const Header = () => {
 
   return (
     <header className='flex align-items justify-content flex-direction'>
-      <nav className='conteiner-nav flex align-items'>
+      <nav className='conteiner-nav flex align-items justify-content'>
         <img
           className='img-logo-header'
           src={logoSimple}

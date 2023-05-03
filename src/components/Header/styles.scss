@@ -88,6 +88,10 @@ header {
    
 
     @include large{
+        .conteiner-nav{
+            justify-content: flex-start;
+        }
+        
         h1{
             font-size: 2.5rem;
         }
