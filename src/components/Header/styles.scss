@@ -1,14 +1,16 @@
+@import '../../styles/_mixins.scss';
+
 header {
     padding: 0 2rem;
     height: 90vh;
 
     .conteiner-nav {
         width: 100vw;
-        
+
         background-color: #0000000e;
 
         gap: 9rem;
-        padding: 1rem 8rem; 
+        padding: 1rem 8rem;
 
         position: fixed;
         top: 0;
@@ -21,50 +23,44 @@ header {
             cursor: pointer;
         }
 
-        .hidden-desktop{
+        .hidden-desktop {
             gap: 3rem;
         }
 
-        .hidden-mobile{
+        .hidden-mobile {
             display: none;
         }
 
-        @media screen and (max-width: 820px) {
-            .hidden-desktop{
-                display: none;
-            }
-            .hidden-mobile{
-                display: flex;
+        .hidden-mobile {
+            display: none;
 
-                position: absolute;
-                top: 2rem;
-                right: 2rem;
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
 
-                .navbar-icon-mobile{
-                    cursor: pointer;
-                }
-            }
-
-            .navbar-mobile{
-                width: 10rem;
-                background-color: var(--black-200);
-                opacity: 0.9;
-
-                border-radius: 1rem;
-
-                gap: 2rem;
-                padding: 2rem;
-
-                position: absolute;
-                right: 0;
-                top: 2rem;
+            .navbar-icon-mobile {
+                cursor: pointer;
             }
         }
-    }
 
+        .navbar-mobile {
+            width: 10rem;
+            background-color: var(--black-200);
+            opacity: 0.9;
 
-    .conteiner-info {
-        margin-top: 5rem;
+            border-radius: 1rem;
+
+            gap: 2rem;
+            padding: 2rem;
+
+            position: absolute;
+            right: 0;
+            top: 2rem;
+
+            z-index: 99999;
+        }
+
+       
     }
 
     .circle {
@@ -74,11 +70,6 @@ header {
         background-color: var(--green-100);
 
         border-radius: 50%;
-
-        -webkit-box-shadow: 108px -6px 168px 0px rgba(53, 171, 130, 0.23);
-        -moz-box-shadow: 108px -6px 168px 0px rgba(53, 171, 130, 0.23);
-        box-shadow: 108px -6px 168px 0px rgba(53, 171, 130, 0.23);
-
         img {
             width: 90%;
             height: 90%;
@@ -87,16 +78,65 @@ header {
         }
         
     }
-    .info{
+
+    .info {
         width: 50%;
-       
+
         align-items: flex-start;
         gap: 1rem;
     }
+   
 
-    @media screen and (max-width: 945px) {
+    @include large{
+        h1{
+            font-size: 2.5rem;
+        }
+
+        .conteiner-nav{
+            .hidden-desktop {
+                display: none;
+            }
+    
+            .hidden-mobile{
+                display: flex;
+            }
+            z-index: 999;
+        }
+    }
+
+    @include regular{
         h1{
             font-size: 2rem;
         }
-    } 
+        p{
+            font-size: 1rem;
+        }
+    }
+
+    @include small{
+     .conteiner-infos{
+        height: 100%;
+        flex-direction: column;
+
+        justify-content: space-evenly;
+
+        .circle{
+            width: 12rem;
+            height: 12rem;
+        }
+     }
+     
+     .info{
+        width: 100%;
+     }
+    }
+
+    @include extraSmall{
+        .conteiner-infos{
+            margin-top: 3rem;
+            h1{
+                font-size: var(--size-regular);
+            }
+        }
+    }
 }

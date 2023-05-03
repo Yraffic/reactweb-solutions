@@ -1,0 +1,36 @@
+$width-extra-large: 940px;
+$width-large: 820px;
+$width-medium: 768px;
+$width-regular: 668px;
+$width-small: 548px;
+$width-extra-small: 428px;
+
+@mixin large {
+  @media (max-width: #{$width-large}){
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (max-width: #{$width-medium}){
+    @content;
+  }
+}
+
+@mixin regular {
+  @media (max-width: #{$width-regular}){
+    @content;
+  }
+}
+
+@mixin small {
+  @media (max-width: #{$width-small}){
+    @content;
+  }
+}
+
+@mixin extraSmall {
+  @media (max-width: #{$width-extra-small}){
+    @content;
+  }
+}

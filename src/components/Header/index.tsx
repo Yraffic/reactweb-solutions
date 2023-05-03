@@ -57,7 +57,7 @@ export const Header = () => {
       <div className='conteiner-infos flex justify-content'>
         <div className='flex align-items justify-content'>
           <motion.div
-            className="circle flex align-items justify-content"
+            className="circle flex align-items justify-content blur"
             animate={{
               scale: [1, 1.2, 1, 1.2, 1],
               rotate: [0, 0, 270, 270, 0],
