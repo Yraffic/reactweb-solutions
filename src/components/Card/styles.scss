@@ -65,9 +65,15 @@
 }
 
 .secondary-card{
-    width: 40%;
+    width: 45%;
+    max-height: 9rem;
+
     flex-direction: row;
-    justify-content: space-between;
+    align-items: flex-start;
+
+    border-radius: 1rem;
+   
+    overflow: auto;
 
     .card-circle{
         display: none;
@@ -76,6 +82,22 @@
         h3{
             font-size: var(--size-regular);
         }
-        margin-left: 2rem;
+    }
+    p{
+        display: block;
+    }
+
+    @include extraSmall{
+        .card-info{
+            h3{
+                font-size: var(--size-small);
+            }
+        }
+    }
+}
+
+@include medium{
+    .secondary-card{
+        width: 100%;
     }
 }
