@@ -1,3 +1,4 @@
+@import '../../styles/mixins';
 main{
     gap: 1rem;
 
@@ -11,10 +12,39 @@ main{
             width: 85%;
         }
         .about-cards{
-            flex-wrap: wrap;
             gap: 3rem;
         }
-    
+        @include extraLarge{
+            .about-cards{
+                gap: 1rem;
+            }
+        }
+
+        @include medium{
+            .about-cards{
+                flex-direction: column;
+            }
+        }
+    }
+
+    @include small {
+        .conteiner{
+            h2{
+                font-size: var(--size-medium);
+            }
+        }
+    }
+
+    @include extraSmall{
+        .conteiner{
+            h2{
+                font-size: var(--size-regular);
+            }
+
+            p{
+                font-size: 1rem;
+            }
+        }
     }
 
     .conteiner-services{
