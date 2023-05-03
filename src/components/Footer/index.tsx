@@ -7,6 +7,9 @@ export const Footer = () => {
     return (
         <footer className='
                 flex
+                aling-items
+                justify-content
+                flex-direction
         '
         >
             <div className='
@@ -23,21 +26,28 @@ export const Footer = () => {
                     empresas que buscam se destacar no mercado online.
                 </p>
             </div>
-            <div></div>
-            <nav className='nav-footer flex flex-direction'>
+            <div className="
+                    nav-footer
+                    flex 
+                    align-items
+                    justify-content
+                    flex-direction
+            ">
                 <p>Links úteis</p>
-                <a href="#">Home</a>
-                <a href="#information">Sobre nós</a>
-                <a href="#services">Serviços</a>
-                <a href="#contact">Fale Conosco</a>
-            </nav>
-            <div className='space'></div>
+                <nav className='flex'>
+                    <a href="#">Home</a>
+                    <a href="#information">Sobre nós</a>
+                    <a href="#services">Serviços</a>
+                    <a href="#contact">Fale Conosco</a>
+                </nav>
+
+            </div>
             <div className='
                 media-social
                 flex
                 align-items
                 flex-direction
-            '> 
+            '>
                 <p>Redes socias</p>
                 <div className=' 
                     flex 
@@ -45,7 +55,7 @@ export const Footer = () => {
                     justify-content
                 '>
                     <a href="">
-                        <img src={insta} alt="icone instagram"/>
+                        <img src={insta} alt="icone instagram" />
                     </a>
                     <a href="">
                         <img src={wpp} alt="icone whatsapp" />
