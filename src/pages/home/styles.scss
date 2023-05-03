@@ -1,12 +1,8 @@
 main{
-    section{
-        height: 100vh;
-    
-        h2{
-            margin-top: 2rem;
-        }
-    }
+    gap: 1rem;
+
     .conteiner{
+        height: 100%;
         width: 100vw;
         padding: 2rem;
         gap: 2rem;
@@ -15,14 +11,15 @@ main{
             width: 85%;
         }
         .about-cards{
+            flex-wrap: wrap;
             gap: 3rem;
         }
     
     }
 
     .conteiner-services{
-        justify-content: center;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 2rem;
     }
 }

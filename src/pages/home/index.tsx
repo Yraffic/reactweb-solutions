@@ -29,8 +29,7 @@ export const Home = () => {
             <div className='
               about-cards 
               flex
-              align-items 
-              justify-content'
+              align-items'
             >
               <Card type='primary' />
               <Card type='primary' />

@@ -1,5 +1,5 @@
 .card {
-    width: 18.75rem;
+    width: 18rem;
 
     background: var(--black-200);
     border: 0.25rem solid var(--black-100);
@@ -35,14 +35,10 @@
         -webkit-line-clamp: 3; 
         -webkit-box-orient: vertical;
     }  
-
-    -webkit-box-shadow: 108px -6px 168px 0px rgba(53, 171, 130, 0.158);
-    -moz-box-shadow: 108px -6px 168px 0px rgba(53, 171, 130, 0.146);
-    box-shadow: 108px -6px 168px 0px rgba(53, 171, 130, 0.23);
 }
 
 .secondary-card{
-    width: 30rem;
+    width: 40%;
     flex-direction: row;
     justify-content: space-between;
 

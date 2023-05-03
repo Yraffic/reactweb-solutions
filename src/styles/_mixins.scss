@@ -5,6 +5,12 @@ $width-regular: 668px;
 $width-small: 548px;
 $width-extra-small: 428px;
 
+@mixin extraLarge {
+  @media (max-width: #{$width-extra-large}){
+    @content;
+  }
+}
+
 @mixin large {
   @media (max-width: #{$width-large}){
     @content;

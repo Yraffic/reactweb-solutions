@@ -12,12 +12,14 @@ export const Card = ({ type }: ICard) => {
         align-items 
         justify-content
         flex-direction
+        blur
         `
         }>
             <div className='
                     card-circle 
                     flex align-items 
-                    justify-content'>
+                    justify-content'
+            >
                 <h3>
                     SEO
                 </h3>

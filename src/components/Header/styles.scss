@@ -86,7 +86,11 @@ header {
         gap: 1rem;
     }
    
-
+    @include extraLarge{
+        h1{
+            font-size: 2.8rem;
+        }
+    }
     @include large{
         .conteiner-nav{
             justify-content: flex-start;
