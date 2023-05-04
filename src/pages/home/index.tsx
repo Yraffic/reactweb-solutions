@@ -6,6 +6,7 @@ import { Forms } from '../../components/Form';
 import { Header } from '../../components/Header';
 import { Loader } from '../../components/Loader';
 import './styles.scss';
+import { Avatar } from '../../components/Avatar';
 
 
 export const Home = () => {
@@ -17,7 +18,8 @@ export const Home = () => {
 
   return (
     <Box
-    backgroundColor='#1B1B1B'
+      backgroundColor='#1B1B1B'
+      overflowX='hidden'
     >
       {
         isLoading ?
@@ -92,6 +94,13 @@ export const Home = () => {
                 </div>
               </section>
             </main>
+            <section className='
+                flex
+                align-items
+                justify-content
+            '>
+                <Avatar />
+            </section>
             <Footer />
           </>
       }
