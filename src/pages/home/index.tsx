@@ -1,26 +1,27 @@
+import { Box } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
 import { Card } from '../../components/Card';
 import { Footer } from '../../components/Footer';
 import { Forms } from '../../components/Form';
 import { Header } from '../../components/Header';
-import './styles.scss'
 import { Loader } from '../../components/Loader';
+import './styles.scss';
 
 
 export const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setIsLoading(false), 1500); 
+    setTimeout(() => setIsLoading(false), 800); 
   }, []);
 
   return (
-    <div >
+    <Box
+    backgroundColor='#1B1B1B'
+    >
       {
         isLoading ?
-        <div className='loader'>
           <Loader />
-        </div>
           :
           <>
             <Header />
@@ -94,6 +95,6 @@ export const Home = () => {
             <Footer />
           </>
       }
-    </div>
+    </Box>
   );
 }
