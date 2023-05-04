@@ -107,3 +107,10 @@ body {
   -moz-box-shadow: 108px -6px 168px 0px rgba(53, 171, 130, 0.23);
   box-shadow: 108px -6px 168px 0px rgba(53, 171, 130, 0.23);
 }
+
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
