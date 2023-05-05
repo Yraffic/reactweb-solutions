@@ -6,6 +6,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 import { AppContextProvider } from './context/AppContext';
 import theme from './theme';
 
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
