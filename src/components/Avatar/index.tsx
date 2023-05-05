@@ -15,6 +15,7 @@ export const Avatar = ()=>{
             src={yuriPng} 
             alt="foto ceo yuri" 
             />
+            <p>Yuri Raffic</p>
             <p>
                 CEO e Dsenvolvedor full Stack
             </p>

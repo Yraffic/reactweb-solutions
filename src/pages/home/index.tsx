@@ -1,12 +1,13 @@
 import { Box } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
+import { Avatar } from '../../components/Avatar';
 import { Card } from '../../components/Card';
 import { Footer } from '../../components/Footer';
 import { Forms } from '../../components/Form';
 import { Header } from '../../components/Header';
 import { Loader } from '../../components/Loader';
+import { ModalInfo } from '../../components/Modal';
 import './styles.scss';
-import { Avatar } from '../../components/Avatar';
 
 
 export const Home = () => {
@@ -48,6 +49,7 @@ export const Home = () => {
               flex
               align-items'
                   >
+                    <ModalInfo />
                     <Card type='primary' />
                     <Card type='primary' />
                     <Card type='primary' />
@@ -102,6 +104,7 @@ export const Home = () => {
                 <Avatar />
             </section>
             <Footer />
+            
           </>
       }
     </Box>

@@ -75,7 +75,7 @@ export const Header = () => {
             <img src={logo} alt="logo react web" />
           </motion.div>
         </div>
-        <div className='info flex flex-direction'>
+        <div className='info flex  flex-direction'>
           <h1>
             Facilite seu desenvolvimento web.
           </h1>

@@ -2,7 +2,7 @@ import { ICard } from '../../types'
 import { Button } from '../Button'
 import './styles.scss'
 
-export const Card = ({ type }: ICard) => {
+export const Card = ({ type, onOpen }: ICard) => {
     return (
         <div className={
             `
@@ -43,7 +43,10 @@ export const Card = ({ type }: ICard) => {
                     type === "secondary" ?
                         ''
                         :
-                        <Button type='secondary'>
+                        <Button 
+                            type='secondary'
+                            onClick={onOpen}
+                        >
                             ver mais
                         </Button>
                 }
