@@ -55,9 +55,9 @@ export const Home = () => {
                       openModal &&
                       <ModalInfo />
                     }
-                    <Card type='primary' />
-                    <Card type='primary' />
-                    <Card type='primary' />
+                    <Card key='1' type='primary' />
+                    <Card key='2'  type='primary' />
+                    <Card key='3'  type='primary' />
                   </div>
                 </div>
               </section>

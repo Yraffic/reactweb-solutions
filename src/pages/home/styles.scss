@@ -4,14 +4,14 @@ main{
     gap: 1rem;
 
     section{
+        height: 100%;
+        width: 100vw;
         h2{
             margin-top: 2rem;
         }
     }
     
     .conteiner{
-        height: 100%;
-        width: 100vw;
         padding: 2rem;
         gap: 2rem;
         
@@ -36,7 +36,6 @@ main{
     #about{
         position: relative;
     }
-
     @include small {
         .conteiner{
             h2{
