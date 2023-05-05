@@ -61,12 +61,12 @@ export const Home = () => {
               >
                 <div
                   className='
-            conteiner
-            flex 
-            align-items 
-            justify-content 
-            flex-direction
-            '
+                    conteiner
+                    flex 
+                    align-items 
+                    justify-content 
+                    flex-direction
+                  '
                 >
                   <h2>Serviços</h2>
                   <div className='

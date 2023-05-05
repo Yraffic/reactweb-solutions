@@ -1,4 +1,4 @@
-import { ButtonHTMLAttributes, ReactNode } from 'react'
+import { ReactNode } from 'react';
 
 export interface IButtonProps {
     children: ReactNode;
@@ -9,4 +9,13 @@ export interface IButtonProps {
 export interface ICard {
     type:string
     onOpen?: () => void;
+}
+
+export interface IAppcontext {
+    openModal: boolean
+    setOpenModal: (value: boolean)=> void
+}
+
+export interface IChildren {
+    children: ReactNode
 }
