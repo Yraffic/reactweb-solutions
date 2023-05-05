@@ -4,16 +4,18 @@ header {
     padding: 0 1rem;
     height: 90vh;
 
+    
     .conteiner-nav {
         width: 100vw;
-
+        
         background-color: #0000000e;
-
+        
         gap: 9rem;
         padding: 1rem 2rem;
-
+        
         position: fixed;
         top: 0;
+        z-index: 9999999999999;
 
         .img-logo-header {
             width: 2.5rem;

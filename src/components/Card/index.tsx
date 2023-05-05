@@ -1,8 +1,12 @@
+import { useContext } from 'react'
 import { ICard } from '../../types'
 import { Button } from '../Button'
 import './styles.scss'
+import { AppContext } from '../../context/AppContext'
 
 export const Card = ({ type, onOpen }: ICard) => {
+    const {setOpenModal} = useContext(AppContext)
+
     return (
         <div className={
             `
@@ -45,7 +49,7 @@ export const Card = ({ type, onOpen }: ICard) => {
                         :
                         <Button 
                             type='secondary'
-                            onClick={onOpen}
+                            onClick={()=> setOpenModal(true)}
                         >
                             ver mais
                         </Button>

@@ -1,7 +1,10 @@
+import { useContext } from 'react'
 import { Button } from '../Button'
 import './styles.scss'
+import { AppContext } from '../../context/AppContext'
 
 export const ModalInfo = () => {
+    const {setOpenModal} = useContext(AppContext)
     return (
         <div className="
             modal
@@ -14,7 +17,10 @@ export const ModalInfo = () => {
                 Isso é feito através da escolha de palavras-chave relevantes,
                 criação de conteúdo de qualidade e otimização de meta-tags e descrições.
             </p>
-            <Button type='secondary'>
+            <Button 
+                type='secondary'
+                onClick={()=> setOpenModal(false)}
+            >
                 Fechar
             </Button>
         </div>

@@ -1,5 +1,5 @@
 import { Box } from '@chakra-ui/react';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { Avatar } from '../../components/Avatar';
 import { Card } from '../../components/Card';
 import { Footer } from '../../components/Footer';
@@ -8,9 +8,11 @@ import { Header } from '../../components/Header';
 import { Loader } from '../../components/Loader';
 import { ModalInfo } from '../../components/Modal';
 import './styles.scss';
+import { AppContext } from '../../context/AppContext';
 
 
 export const Home = () => {
+  const {openModal} = useContext(AppContext)
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -49,7 +51,10 @@ export const Home = () => {
               flex
               align-items'
                   >
-                    <ModalInfo />
+                    {
+                      openModal &&
+                      <ModalInfo />
+                    }
                     <Card type='primary' />
                     <Card type='primary' />
                     <Card type='primary' />
