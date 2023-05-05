@@ -14,7 +14,7 @@ export const Header = () => {
   }
 
   return (
-    <header className='flex align-items justify-content flex-direction'>
+    <header id='home' className='flex align-items justify-content flex-direction'>
       <nav className='conteiner-nav flex align-items justify-content'>
         <img
           className='img-logo-header'
@@ -22,7 +22,7 @@ export const Header = () => {
           alt='logo'
         />
         <div className='hidden-desktop flex'>
-          <a href="#">Home</a>
+          <a href="#home">Home</a>
           <a href="#information">Sobre nós</a>
           <a href="#services">Serviços</a>
           <a href="#contact">Fale Conosco</a>
@@ -46,7 +46,7 @@ export const Header = () => {
                 damping: 20
               }}
             >
-              <a href="#">Home</a>
+              <a href="#home">Home</a>
               <a href="#information">Sobre nós</a>
               <a href="#services">Serviços</a>
               <a href="#contact">Fale Conosco</a>

@@ -35,7 +35,7 @@ export const Footer = () => {
             ">
                 <p>Links úteis</p>
                 <nav className='flex'>
-                    <a href="#">Home</a>
+                    <a href="#home">Home</a>
                     <a href="#information">Sobre nós</a>
                     <a href="#services">Serviços</a>
                     <a href="#contact">Fale Conosco</a>
@@ -54,12 +54,10 @@ export const Footer = () => {
                     align-items
                     justify-content
                 '>
-                    <a href="">
+                    <a href="https://www.instagram.com/reactwebsolutions/">
                         <img src={insta} alt="icone instagram" />
                     </a>
-                    <a href="">
                         <img src={wpp} alt="icone whatsapp" />
-                    </a>
                 </div>
             </div>
         </footer>
