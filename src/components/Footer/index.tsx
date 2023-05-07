@@ -1,5 +1,5 @@
 import './styles.scss'
-import logo from '../../assets/logo.jpeg'
+import logo from '../../assets/logo.webp'
 import insta from '../../assets/instagram .svg'
 import wpp from '../../assets/whatsapp.svg'
 

@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import logo from '../../assets/logo.jpeg'
-import logoSimple from '../../assets/logoSimple.jpeg'
+import logo from '../../assets/logo.webp'
+import logoSimple from '../../assets/logoSimple.webp'
 import { Button } from '../Button'
-import navMobile from '../../assets/navmobile.png'
+import navMobile from '../../assets/navmobile.webp'
 import './styles.scss'
 
 export const Header = () => {
