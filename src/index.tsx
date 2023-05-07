@@ -1,10 +1,7 @@
-import { ColorModeScript } from '@chakra-ui/react';
 import ReactDOM from 'react-dom/client';
+import { AppContextProvider } from './context/AppContext';
 import './index.scss';
 import { Home } from './pages/home';
-import { ChakraProvider } from '@chakra-ui/react';
-import { AppContextProvider } from './context/AppContext';
-import theme from './theme';
 
 
 const root = ReactDOM.createRoot(
@@ -12,9 +9,6 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <AppContextProvider>
-    <ChakraProvider>
-     <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <Home />
-    </ChakraProvider>
   </AppContextProvider>
 );
