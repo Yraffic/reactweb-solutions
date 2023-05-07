@@ -18,10 +18,10 @@ header {
         z-index: 9999999999999;
 
         .img-logo-header {
-            width: 2.5rem;
-            height: 2.5rem;
+            width: 2rem;
+            height: 2rem;
 
-            border-radius: 50%;
+            border-radius: 100%;
             cursor: pointer;
         }
 
@@ -35,12 +35,8 @@ header {
 
         .hidden-mobile {
             display: none;
-
-            position: absolute;
-            top: 2rem;
-            right: 2rem;
-
             .navbar-icon-mobile {
+                position: relative;
                 cursor: pointer;
             }
         }
@@ -56,8 +52,8 @@ header {
             padding: 2rem;
 
             position: absolute;
-            right: 0;
-            top: 2rem;
+            right: 0.3rem;
+            top: 3rem;
 
             z-index: 99999;
         }
@@ -69,14 +65,16 @@ header {
         width: 70%;
         height: 70%;
 
+        padding: 1rem;
+
         background-color: var(--green-100);
 
         border-radius: 50%;
         img {
-            width: 90%;
-            height: 90%;
+            width: 100%;
+            height: 100%;
 
-            border-radius: 50%;
+            border-radius: 100%;
         }
         
     }
@@ -103,6 +101,7 @@ header {
         }
 
         .conteiner-nav{
+            justify-content: space-between;
             .hidden-desktop {
                 display: none;
             }

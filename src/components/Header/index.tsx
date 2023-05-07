@@ -1,10 +1,10 @@
-import './styles.scss'
-import logoSimple from '../../assets/logoSimple.svg'
-import logo from '../../assets/logo.svg'
-import { Button } from '../Button'
-import { HamburgerIcon } from '@chakra-ui/icons'
-import { useState } from 'react'
 import { motion } from 'framer-motion'
+import { useState } from 'react'
+import logo from '../../assets/logo.jpeg'
+import logoSimple from '../../assets/logoSimple.jpeg'
+import { Button } from '../Button'
+import navMobile from '../../assets/navmobile.png'
+import './styles.scss'
 
 export const Header = () => {
   const [showNavbarMobile, setShowNavbarMobile] = useState(false)
@@ -29,8 +29,9 @@ export const Header = () => {
         </div>
 
         <div className='hidden-mobile flex flex-direction'>
-          <HamburgerIcon
-            className='navbar-icon-mobile'
+          <img 
+            src={navMobile} 
+            alt='navbar'
             onClick={showNav}
           />
           {showNavbarMobile &&
@@ -38,12 +39,12 @@ export const Header = () => {
             <motion.nav
               className='navbar-mobile flex flex-direction'
               onClick={showNav}
-              initial={{ right: "40rem" }}
+              initial={{ right:150 }}
               animate={{ right: 0 }}
               transition={{
                 type: "spring",
-                stiffness: 260,
-                damping: 20
+                stiffness: 180,
+                damping: 60
               }}
             >
               <a href="#home">Home</a>

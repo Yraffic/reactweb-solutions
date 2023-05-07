@@ -1,5 +1,5 @@
 import './styles.scss'
-import yuriPng from '../../assets/yuri.png'
+import yuriPng from '../../assets/yuri.jpeg'
 
 export const Avatar = ()=>{
     return (
