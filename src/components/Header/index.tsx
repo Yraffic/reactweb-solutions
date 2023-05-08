@@ -1,9 +1,8 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import logo from '../../assets/logo.webp'
 import logoSimple from '../../assets/logoSimple.webp'
-import { Button } from '../Button'
 import navMobile from '../../assets/navmobile.webp'
+import { Button } from '../Button'
 import './styles.scss'
 
 export const Header = () => {
@@ -40,7 +39,7 @@ export const Header = () => {
               className='navbar-mobile flex flex-direction'
               onClick={showNav}
               initial={{ right:150 }}
-              animate={{ right: 0 }}
+              animate={{ right: 10 }}
               transition={{
                 type: "spring",
                 stiffness: 180,
@@ -58,25 +57,33 @@ export const Header = () => {
       <div className='conteiner-infos flex justify-content'>
         <div className='flex align-items justify-content'>
           <motion.div
-            className="circle flex align-items justify-content blur"
+            className="
+              circle 
+              flex 
+              align-items 
+              justify-content 
+              flex-direction
+              blur
+            "
             animate={{
-              scale: [1, 1.2, 1, 1.2, 1],
+              scale: [0.1, 0.25, 0.5, 0.75, 1],
               rotate: [0, 0, 270, 270, 0],
-              borderRadius: ["50%", "50%", "50%", "50%", "50%"],
+              borderRadius: ["20%", "20%", "50%", "50%", "20%"],
             }}
             
             transition={{
-              duration: 3,
+              duration: 5,
               ease: "easeInOut",
               repeat: Infinity,
               repeatType: "loop",
-            }}
+            }} 
 
           >
-            <img src={logo} alt="logo react web" />
+            <h3>ReactWebSolutions</h3>
+            <p>Soluções personalizadas para o seu negócio</p>
           </motion.div>
         </div>
-        <div className='info flex  flex-direction'>
+        <div className='info flex align-items justify-content flex-direction'>
           <h1>
             Facilite seu desenvolvimento web.
           </h1>
