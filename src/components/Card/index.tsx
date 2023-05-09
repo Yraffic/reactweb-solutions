@@ -1,11 +1,7 @@
-import { useContext } from 'react'
 import { ICard } from '../../types'
-import { Button } from '../Button'
 import './styles.scss'
-import { AppContext } from '../../context/AppContext'
 
 export const Card = ({ type, onOpen }: ICard) => {
-    const {setOpenModal} = useContext(AppContext)
 
     return (
         <div className={
@@ -43,17 +39,7 @@ export const Card = ({ type, onOpen }: ICard) => {
                     Isso é feito através da escolha de palavras-chave relevantes,
                     criação de conteúdo de qualidade e otimização de meta-tags e descrições.
                 </p>
-                {
-                    type === "secondary" ?
-                        ''
-                        :
-                        <Button 
-                            type='secondary'
-                            onClick={()=> setOpenModal(true)}
-                        >
-                            ver mais
-                        </Button>
-                }
+               <a href="#hover">Clique no card para ver mais</a>
             </div>
         </div>
     )

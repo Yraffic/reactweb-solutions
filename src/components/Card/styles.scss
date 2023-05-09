@@ -1,7 +1,7 @@
 @import '../../styles/mixins';
 
 .card {
-    width: 18rem;
+    width: 33%;
     
     background: var(--black-200);
     border: 0.25rem solid var(--black-100);
@@ -37,6 +37,9 @@
         -webkit-line-clamp: 4; 
         -webkit-box-orient: vertical;
     }  
+    a{
+        display: none;
+    }
 
 }
 
@@ -61,6 +64,9 @@
 @include medium{
     .card{
         width: 100%;
+        a{
+            display: block;
+        }
     }
 }
 
@@ -97,12 +103,35 @@
     }
 }
 
-.secondary-card:hover{
-    height: 20rem;
+.card:hover{
+    width: 100%;
+    .card-circle{
+        display: none;
+    }
+    
     p{  
         height: 50%;
         display: block;
         z-index: 99999;
         overflow: auto;
+    }
+    a{
+        display: none;
+    }
+}
+
+.secondary-card:hover{
+    width: 45%;
+    
+    p{  
+        display: block;
+        z-index: 99999;
+        overflow: auto;
+    }
+}
+
+@include medium{
+    .secondary-card:hover{
+        width: 100%;
     }
 }

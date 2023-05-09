@@ -1,16 +1,12 @@
-import { useContext } from 'react';
 import { Avatar } from '../../components/Avatar';
 import { Card } from '../../components/Card';
 import { Footer } from '../../components/Footer';
 import { Forms } from '../../components/Form';
 import { Header } from '../../components/Header';
-import { ModalInfo } from '../../components/Modal';
-import { AppContext } from '../../context/AppContext';
 import './styles.scss';
 
 
 export const Home = () => {
-  const { openModal } = useContext(AppContext)
 
   return (
     <div>
@@ -36,10 +32,6 @@ export const Home = () => {
               flex
               align-items'
             >
-              {
-                openModal &&
-                <ModalInfo />
-              }
               <Card key='1' type='primary' />
               <Card key='2' type='primary' />
               <Card key='3' type='primary' />
