@@ -1,8 +1,8 @@
 @import '../../styles/_mixins.scss';
 
 header {
-    padding: 0 1rem;
-    height: 80vh;
+    padding: 1rem;
+    height: 90vh;
 
     border-bottom: 0.03rem solid var(--black-100) ;
     
@@ -19,8 +19,8 @@ header {
         z-index: 9999999999999;
 
         .img-logo-header {
-            width: 2rem;
-            height: 2rem;
+            width: 1.87rem;
+            height: 1.87rem;
 
             border-radius: 50%;
             cursor: pointer;
@@ -37,6 +37,8 @@ header {
         .hidden-mobile {
             display: none;
             .navbar-icon-mobile {
+                width: 1.87rem;
+                height: 1.87rem;
                 position: relative;
                 cursor: pointer;
             }
@@ -83,8 +85,7 @@ header {
     .info {
         width: 40%;
 
-        align-items: flex-start;
-        gap: 1rem;
+        gap: 2rem;
     }
    
     @include extraLarge{
@@ -182,7 +183,6 @@ header {
      
      .info{
         width: 95%;
-        padding: 2rem;
      }
     }
 

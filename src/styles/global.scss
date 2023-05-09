@@ -1,3 +1,5 @@
+@import './mixins';
+
 h1 {
     font-weight: var(--font-weight-bold);
     font-size: var(--size-large);
@@ -53,4 +55,18 @@ a:hover {
     -webkit-box-shadow: 108px -6px 168px 0px rgba(53, 171, 130, 0.23);
     -moz-box-shadow: 108px -6px 168px 0px rgba(53, 171, 130, 0.23);
     box-shadow: 108px -6px 168px 0px rgba(53, 171, 130, 0.23);
+}
+
+@include small{
+    h1, h2, h3 {
+        font-family: sans-serif;
+    }
+     
+    p {
+        font-family:sans-serif;
+    }
+    
+    a {
+        font-family: sans-serif;
+    }
 }

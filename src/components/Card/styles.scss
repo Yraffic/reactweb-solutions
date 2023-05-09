@@ -10,6 +10,7 @@
     padding: 2rem;
     gap: 1rem;
 
+    cursor: pointer;
     .card-circle{
         width: 9rem;
         height: 9rem;
@@ -23,7 +24,6 @@
 
         h3{
             font-size: var(--size-small);
-            color: var(--green-100);
         }
     }
     .card-info{

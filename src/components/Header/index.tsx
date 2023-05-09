@@ -32,6 +32,7 @@ export const Header = () => {
             src={navMobile} 
             alt='navbar'
             onClick={showNav}
+            className='navbar-icon-mobile'
           />
           {showNavbarMobile &&
 
@@ -92,9 +93,11 @@ export const Header = () => {
             Deseja desenvolver um site para sua empresa? Programas, Aplicativos
             ou landing pages? Criamos!
           </p>
-          <Button type='primary'>
-            Contato
-          </Button>
+            <a href="#contact">
+              <Button type='primary'>
+                Contato
+              </Button>
+            </a>
         </div>
       </div>
     </header>
