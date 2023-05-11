@@ -3,6 +3,7 @@ import { Card } from '../../components/Card';
 import { Footer } from '../../components/Footer';
 import { Forms } from '../../components/Form';
 import { Header } from '../../components/Header';
+import { services, techniques } from '../../data';
 import './styles.scss';
 
 
@@ -23,18 +24,25 @@ export const Home = () => {
           >
             <h2>Nossa empresa</h2>
             <p>
-              A ReactWeb Solutions é capaz de criar e projetar soluções de software
-              para uma ampla variedade de clientes e aplicativos. Além de ser especializada em desenvolvimento de software,
-              a sua empresa também se destaca por utilizar as melhores técnicas de desenvolvimento SEO, performance e exclusividade.
+              A ReactWeb Solutions oferece soluções de software personalizadas para uma ampla variedade de clientes e aplicativos. Nós nos destacamos por nosso conhecimento especializado em desenvolvimento de software e por utilizar as melhores técnicas de desenvolvimento SEO, performance e exclusividade.
             </p>
             <div className='
               about-cards 
               flex
               align-items'
             >
-              <Card key='1' type='primary' />
-              <Card key='2' type='primary' />
-              <Card key='3' type='primary' />
+              {
+                techniques.map((item) => {
+                  return (
+                    <Card
+                      key={item.id}
+                      type='primary'
+                      title={item.title}
+                      description={item.description}
+                    />
+                  )
+                })
+              }
             </div>
           </div>
         </section>
@@ -57,9 +65,18 @@ export const Home = () => {
                   align-items
                   '
             >
-              <Card type='secondary' />
-              <Card type='secondary' />
-              <Card type='secondary' />
+              {
+                services.map((item) => {
+                  return (
+                    <Card
+                      key={item.id}
+                      type='secondary'
+                      title={item.title}
+                      description={item.description}
+                    />
+                  )
+                })
+              }
             </div>
           </div>
         </section>

@@ -89,9 +89,7 @@ export const Header = () => {
             Facilite seu desenvolvimento web.
           </h1>
           <p>
-            Nossa empresa é especializada em criar soluções online sob medida e exclusiva para nossos clientes.
-            Deseja desenvolver um site para sua empresa? Programas, Aplicativos
-            ou landing pages? Criamos!
+          Destaque sua empresa na internet com uma solução online exclusiva! Desenvolvemos sites, programas e aplicativos sob medida para suas necessidades. Conte conosco para levar seu negócio para o próximo nível!
           </p>
             <a href="#contact">
               <Button type='primary'>

@@ -1,7 +1,7 @@
 import { ICard } from '../../types'
 import './styles.scss'
 
-export const Card = ({ type, onOpen }: ICard) => {
+export const Card = ({ type,title, description, onOpen }: ICard) => {
 
     return (
         <div className={
@@ -21,7 +21,7 @@ export const Card = ({ type, onOpen }: ICard) => {
                     justify-content'
             >
                 <h3>
-                    SEO
+                    {title}
                 </h3>
             </div>
             <div className='
@@ -31,13 +31,9 @@ export const Card = ({ type, onOpen }: ICard) => {
                 justify-content
                 flex-direction
             ' >
-                {type === "secondary" ? <h3>Desenvolvimento web</h3> : ''}
+                {type === "secondary" ? <h3>{title}</h3> : ''}
                 <p>
-                    Em relação ao SEO, a nossa empresa trabalha com a otimização de sites
-                    para que possam ser facilmente encontrados pelos motores de busca,
-                    melhorando assim a visibilidade online dos seus clientes.
-                    Isso é feito através da escolha de palavras-chave relevantes,
-                    criação de conteúdo de qualidade e otimização de meta-tags e descrições.
+                   {description}
                 </p>
                <a href="#hover">Clique no card para ver mais</a>
             </div>

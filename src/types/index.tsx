@@ -9,6 +9,8 @@ export interface IButtonProps {
 export interface ICard {
     type:string
     onOpen?: () => void;
+    title: string
+    description: string
 }
 
 export interface IAppcontext {
@@ -18,4 +20,10 @@ export interface IAppcontext {
 
 export interface IChildren {
     children: ReactNode
+}
+
+export interface IData {
+    id: number
+    title: string
+    description: string
 }
