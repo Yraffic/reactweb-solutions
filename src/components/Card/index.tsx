@@ -17,7 +17,8 @@ export const Card = ({ type,title, description, onOpen }: ICard) => {
         }>
             <div className='
                     card-circle 
-                    flex align-items 
+                    flex 
+                    align-items 
                     justify-content'
             >
                 <h3>
@@ -35,7 +36,7 @@ export const Card = ({ type,title, description, onOpen }: ICard) => {
                 <p>
                    {description}
                 </p>
-               <a href="#hover">Clique no card para ver mais</a>
+               <a href="#hover">Clique para ver mais</a>
             </div>
         </div>
     )

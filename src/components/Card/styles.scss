@@ -6,7 +6,7 @@
     background: var(--black-200);
     border: 0.25rem solid var(--black-100);
 
-    border-radius: 3.75rem;
+    border-radius: 2rem;
     padding: 2rem;
     gap: 1rem;
 
@@ -15,15 +15,13 @@
         width: 9rem;
         height: 9rem;
 
+        border-radius: 50%;
+
         background-color: var(--green-200);
         padding: 1rem;
 
-        border-radius: 50%;
-        overflow: hidden;
-        text-overflow: ellipsis;
-
         h3{
-            font-size: var(--size-small);
+            font-size: 1rem;
         }
     }
     .card-info{
@@ -103,14 +101,19 @@
     }
 }
 
-.card:hover{
+.primary-card:hover{
     width: 100%;
+    height: 70vh;
+
+    justify-content: flex-start;
+    padding: 2rem;
+    
+    overflow: auto;
     .card-circle{
         display: none;
     }
     
     p{  
-        height: 50%;
         display: block;
         z-index: 99999;
         overflow: auto;
@@ -122,11 +125,20 @@
 
 .secondary-card:hover{
     width: 45%;
+    height: 45vh;
+
+    justify-content: flex-start;
     
+    padding: 1rem;
+
+    overflow: auto;
     p{  
         display: block;
         z-index: 99999;
         overflow: auto;
+    }
+    a{
+        display: none;
     }
 }
 
