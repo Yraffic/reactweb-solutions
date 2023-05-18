@@ -64,6 +64,21 @@ main{
         gap: 2rem;
     }
 
+    .detail{
+        width: 100%;
+        justify-content: space-between;
+
+        padding: 1rem 3rem;
+        img{
+            width: 30%;
+            height: 30%;
+        }
+        .info-detail{
+            width: 50%;
+            flex-direction: column;
+            gap: 2rem;
+        }
+    }
     @include regular{
         #contact{
             h2{

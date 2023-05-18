@@ -13,6 +13,7 @@ export const Card = ({ type,title, description, onOpen }: ICard) => {
         justify-content
         flex-direction
         blur
+        transition-all
         `
         }>
             <div className='

@@ -67,13 +67,13 @@ export const Header = () => {
               blur
             "
             animate={{
-              scale: [0.1, 0.25, 0.5, 0.75, 1],
-              rotate: [0, 0, 270, 270, 0],
-              borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+              scale: [0.4, 0.55, 0.7, 0.85, 1],
+              rotate: [0, 0, 20, 20, 0],
+              borderRadius: ["10%", "80%", "30%", "50%", "0%"],
             }}
             
             transition={{
-              duration: 5,
+              duration: 8,
               ease: "easeInOut",
               repeat: Infinity,
               repeatType: "loop",

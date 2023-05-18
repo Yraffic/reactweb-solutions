@@ -121,11 +121,11 @@
     a{
         display: none;
     }
+    
 }
 
 .secondary-card:hover{
     width: 45%;
-    height: 45vh;
 
     justify-content: flex-start;
     
@@ -146,4 +146,10 @@
     .secondary-card:hover{
         width: 100%;
     }
+}
+
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
 }

@@ -1,12 +1,40 @@
-.avatar{
+.avatar {
     width: 100vw;
+    height: 90vh;
     gap: 1rem;
 
-    padding: 1rem;
-    border-top: 0.06rem solid var(--black-100);
+    padding: 2rem 1rem;
 
-    .avatar-image{
-        width: 6rem;
-        height: 6rem;
+    .container-avatar {
+        width: 90%;
+        height: 70%;
+
+        gap: 1rem;
+
+        position: relative;
+
+        border: 0.1rem solid var(--green-200);
+        border-radius: 0.9rem;
+
+        padding: 4rem 1rem;
+        p{
+            text-align: center;
+        }
+        .avatar-image {
+            width: 9rem;
+            height: 9rem;
+
+            position: absolute;
+            top: -6.5rem;
+        }
+
+        .name-avatar{
+            color: var(--green-100);
+        }
+
+        .name-function{
+            color: var(--color-blur);
+        }
     }
+
 }

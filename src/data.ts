@@ -45,28 +45,15 @@ export const techniques: IData[] = [
 export const services: IData[] = [
     {
         id: 1,
-        title: 'Sites e Landing pages', 
+        title: 'Desenvolvimento web', 
         description: `
-        se você deseja um site, landing page, blog ou loja virtual que realmente faça a diferença no seu negócio, entre em contato conosco e solicite um orçamento. 
+        se você deseja web aplicações personalizadas, site, landing page, blog ou loja virtual que realmente faça a diferença no seu negócio, entre em contato conosco e solicite um orçamento. 
         `  
     },
     {
         id: 2,
-        title: 'Aplicações web', 
-        description: `
-        Com nossas web aplicações personalizadas, seu negócio terá a solução ideal para gerenciar estoque, finanças, contas e muito mais! Acesse seus aplicativos e dados de qualquer lugar do mundo com segurança e facilidade de uso. Somos especialistas em desenvolvimento web - deixe-nos ajudá-lo a tornar seu negócio mais eficiente e flexível! 
-        `  
-    },
-    {
-        id: 3,
         title: 'UX/UI', 
         description: `
-        Com o serviço UX/UI, você terá uma interface intuitiva e amigável que seus usuários vão adorar. Transformamos a complexidade em simplicidade, tornando a experiência do usuário a mais agradável possível. Deixe-nos ajudá-lo a criar uma interface que impressiona e aumenta a satisfação do cliente!     `  
-    },
-    {
-        id: 4,
-        title: 'Social Media', 
-        description: `Com nosso serviço de Social Media, sua marca terá uma presença poderosa e engajadora nas redes sociais. Aumente o alcance da sua marca, atraia novos clientes e fortaleça o relacionamento com seu público. Deixe-nos ajudá-lo a impulsionar o sucesso da sua marca nas redes sociais!
-        `
+        Com o serviço UX/UI, você terá uma interface intuitiva e amigável que seus usuários vão adorar. Deixe-nos ajudá-lo`  
     }
 ]
