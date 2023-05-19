@@ -31,7 +31,7 @@ export const Forms = () => {
                 name='description'
                 required
             />
-            <input type="hidden" name='_next' value='http://localhost:3000/sucesso' />
+            <input type="hidden" name='_next' value='https://reactwebsolutions.tech/sucesso' />
             <input 
                 type="hidden" 
                 name='_autoresponse' 

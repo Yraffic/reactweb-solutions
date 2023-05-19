@@ -8,6 +8,7 @@ import ux from '../../assets/ux.svg'
 import web from '../../assets/web.svg'
 import './styles.scss';
 import { Button } from '../../components/Button';
+import { Link } from 'react-router-dom';
 
 
 export const Home = () => {
@@ -91,9 +92,11 @@ export const Home = () => {
               <p>
               O desenvolvimento web cria aplicativos, sites, landing pages e blogs incríveis. Com objetivos claros em mente, escolhemos as melhores tecnologias. Nossos sites são intuitivos e responsivos, garantindo uma ótima experiência ao usuário. As landing pages são otimizadas para conversão, com um design atraente e chamadas para ação convincentes. Nossos blogs compartilham informações valiosas de forma concisa e envolvente. Construa sua presença online de forma eficiente e impactante com nossos serviços de desenvolvimento web.
               </p>
-              <Button type='primary'>
-                  Entrar em contato
-              </Button>
+              <a href="#contact">
+                <Button type='primary'>
+                    Entrar em contato
+                </Button>
+              </a>
             </div>
             <img src={web} alt="imagem de um notebook" />
           </div>
@@ -104,9 +107,11 @@ export const Home = () => {
               <p>
               Nosso serviço de UI/UX oferece experiências digitais excepcionais. Criamos interfaces intuitivas e visualmente atraentes, focadas na usabilidade e na satisfação do usuário. Nossa abordagem centrada no usuário garante que cada interação seja fluida e envolvente. Combinamos design estético com funcionalidade prática, resultando em soluções eficientes e impactantes. Aprimore a experiência do seu público-alvo com nosso serviço especializado de UI/UX.Nosso serviço de UI/UX oferece experiências digitais excepcionais. Criamos interfaces intuitivas e visualmente atraentes, focadas na usabilidade e na satisfação do usuário. Nossa abordagem centrada no usuário garante que cada interação seja fluida e envolvente. Combinamos design estético com funcionalidade prática, resultando em soluções eficientes e impactantes. Aprimore a experiência do seu público-alvo com nosso serviço especializado de UI/UX.
               </p>
-              <Button type='primary'>
-                  Entrar em contato
-              </Button>
+              <a href='#contact'>
+                <Button type='primary'>
+                    Entrar em contato
+                </Button>
+              </a>
             </div>
           </div>
         </section>

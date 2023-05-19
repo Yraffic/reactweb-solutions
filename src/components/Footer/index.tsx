@@ -57,7 +57,9 @@ export const Footer = () => {
                     <a href="https://www.instagram.com/reactwebsolutions/">
                         <img src={insta} alt="icone instagram" />
                     </a>
+                    <a href="https://wa.me/5598985632581?text=Olá,%20gostaria%20de%20fazer%20um%20orçamento!">
                         <img src={wpp} alt="icone whatsapp" />
+                    </a>
                 </div>
             </div>
         </footer>

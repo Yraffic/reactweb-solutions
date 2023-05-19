@@ -4,6 +4,7 @@ import logoSimple from '../../assets/logoSimple.webp'
 import navMobile from '../../assets/navmobile.webp'
 import { Button } from '../Button'
 import './styles.scss'
+import { Menu } from 'lucide-react'
 
 export const Header = () => {
   const [showNavbarMobile, setShowNavbarMobile] = useState(false)
@@ -28,11 +29,9 @@ export const Header = () => {
         </div>
 
         <div className='hidden-mobile flex flex-direction'>
-          <img 
-            src={navMobile} 
-            alt='navbar'
+          <Menu 
             onClick={showNav}
-            className='navbar-icon-mobile'
+            size={30}
           />
           {showNavbarMobile &&
 
