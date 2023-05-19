@@ -1,6 +1,7 @@
 import { MailCheck } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/Button";
+import { motion } from "framer-motion";
 import './styles.scss';
 
 
@@ -25,22 +26,42 @@ export const Success = () => {
 
   return (
     <div className="success flex align-items justify-content flex-direction">
-      <MailCheck size={150}/>
-      <h2>Contato registrado!</h2>
-      <p>
+     <motion.div
+       initial={{y: -500}}
+       animate={{y: 0}}
+       transition={{duration: 0.8}}
+     >
+        <MailCheck size={150}/>
+     </motion.div>
+      <motion.h2
+      initial={{x: 500}}
+      animate={{x: 0}}
+      transition={{duration: 0.8}}
+      >
+        Contato registrado!
+      </motion.h2>
+      <motion.p
+      initial={{x: -500}}
+      animate={{x: 0}}
+      transition={{duration: 0.8}}
+      >
        Alguém de nossa equipe entrará em contato com você 
         ou clique no botão abaixo 
-      </p>
+      </motion.p>
       <Button 
       type="secondary"
       onClick={contacttWpp}
       >
           WhatsApp
       </Button>
-      <p>
+      <motion.p
+        initial={{x: 500}}
+        animate={{x: 0}}
+        transition={{duration: 0.8}}
+      >
         Se você opitar por aguarda o contato que será o mais breve possivel,<br/> 
          <Link to="/">Clique para voltar para pagina principal</Link>
-      </p>
+      </motion.p>
     </div>
   );
 }
