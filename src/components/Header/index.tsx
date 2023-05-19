@@ -1,10 +1,9 @@
 import { motion } from 'framer-motion'
+import { Menu } from 'lucide-react'
 import { useState } from 'react'
 import logoSimple from '../../assets/logoSimple.webp'
-import navMobile from '../../assets/navmobile.webp'
 import { Button } from '../Button'
 import './styles.scss'
-import { Menu } from 'lucide-react'
 
 export const Header = () => {
   const [showNavbarMobile, setShowNavbarMobile] = useState(false)

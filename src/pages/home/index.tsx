@@ -1,14 +1,13 @@
+import ux from '../../assets/ux.svg';
+import web from '../../assets/web.svg';
 import { Avatar } from '../../components/Avatar';
+import { Button } from '../../components/Button';
 import { Card } from '../../components/Card';
 import { Footer } from '../../components/Footer';
 import { Forms } from '../../components/Form';
 import { Header } from '../../components/Header';
 import { services, techniques } from '../../data';
-import ux from '../../assets/ux.svg'
-import web from '../../assets/web.svg'
 import './styles.scss';
-import { Button } from '../../components/Button';
-import { Link } from 'react-router-dom';
 
 
 export const Home = () => {
