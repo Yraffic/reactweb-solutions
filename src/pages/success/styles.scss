@@ -12,3 +12,25 @@
         text-align: center;
     }
 }
+
+@include small{
+    .success{
+        h2{
+            font-size: var(--size-medium);
+        }
+        p{
+            font-size: var(--size-small);
+        }
+    }
+}
+
+@include extraSmall{
+    .success{
+        h2{
+            font-size: var(--size-regular);
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+}
