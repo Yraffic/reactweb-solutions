@@ -15,6 +15,7 @@ export const Home = () => {
   return (
     <div>
       <Header />
+      
       <main id='information'>
         <section id='about'>
           <div

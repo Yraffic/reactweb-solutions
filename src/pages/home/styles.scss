@@ -69,16 +69,18 @@ main{
         justify-content: space-between;
 
         padding: 1rem 3rem;
+
+        margin-bottom: 3rem;
         img{
-            width: 30%;
-            height: 30%;
+            width: 40%;
+            height: 40%;
         }
         .info-detail{
-            width: 50%;
             flex-direction: column;
             gap: 2rem;
         }
     }
+
     @include regular{
         #contact{
             h2{
@@ -86,7 +88,51 @@ main{
                 font-weight: var(--font-weight-bold);
             }
             h3{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+@include medium{
+    .detail{
+        .info-detail{
+            h1{
+                font-size: var(--size-medium);
+            }
+            p{
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@include regular{
+    .detail{
+        flex-direction: column-reverse;
+        
+        .info-detail{
+            
+            h1{
+                font-size: var(--size-regular);
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@include extraSmall{
+    .detail{
+        flex-direction: column-reverse;
+        
+        .info-detail{
+            
+            h1{
                 font-size: var(--size-small);
+            }
+            p{
+                font-size: 0.8rem;
             }
         }
     }

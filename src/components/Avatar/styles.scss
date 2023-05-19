@@ -1,3 +1,5 @@
+@import '../../styles/mixins';
+
 .avatar {
     width: 100vw;
     height: 90vh;
@@ -37,4 +39,12 @@
         }
     }
 
+}
+
+@include small{
+    .container-avatar{
+        p{
+            font-size: var(--font-size-small);
+        }
+    }
 }
