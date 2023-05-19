@@ -19,7 +19,7 @@ export const Success = () => {
       </Button>
       <p>
         Se você opitar por aguarda o contato que será o mais breve possivel,<br/> 
-         <Link to="/home">Clique para voltar para pagina principal</Link>
+         <Link to="/">Clique para voltar para pagina principal</Link>
       </p>
     </div>
   );

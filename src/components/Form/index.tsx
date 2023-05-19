@@ -63,6 +63,13 @@ export const Forms = () => {
                 placeholder='fale sobre sua ideia/problema'
                 {...register('infor')}
             />
+            <input type="hidden" name='_next' value='http://localhost:3000/sucesso' />
+            <input 
+                type="hidden" 
+                name='_autoresponse' 
+                value='Recebemos sua mensagem, obrigado pelo contato e logo responderemos' 
+            />
+            <input type="hidden" name="_template" value="table"/>
             <button type='submit' className='btn primary'>
                 Enviar
             </button>
