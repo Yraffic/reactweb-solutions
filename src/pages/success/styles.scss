@@ -1,0 +1,14 @@
+@import '../../styles/mixins';
+@import '../../styles/global.scss';
+
+
+.success{
+    width: 100vw;
+    height: 100vh;
+
+    gap: 1rem;
+
+    p{
+        text-align: center;
+    }
+}

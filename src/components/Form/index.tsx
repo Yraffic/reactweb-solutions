@@ -13,7 +13,7 @@ export const Forms = () => {
     const { register, handleSubmit} = useForm<FormValues>();
     const [erro, setErro] = useState('');
 
-    const onSubmit: SubmitHandler<FormValues> = (data) => {
+   /*  const onSubmit: SubmitHandler<FormValues> = (data) => {
         if (data.name === '') {
             return setErro('Nome deve ser informado !');
         }
@@ -33,12 +33,14 @@ export const Forms = () => {
         whatsapp.click();
 
         document.body.removeChild(whatsapp);
-    };
+    }; */
 
     return (
         <form
             className='flex align-items justify-content flex-direction forms'
-            onSubmit={handleSubmit(onSubmit)}
+            action="https://formsubmit.co/reactweb2023@gmail.com" 
+            method="POST"
+            /* onSubmit={handleSubmit(onSubmit)}  */
         >
             <input
                 type="text"
