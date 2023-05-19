@@ -1,3 +1,4 @@
+import { type } from 'os';
 import { ReactNode } from 'react';
 
 export interface IButtonProps {
@@ -27,3 +28,4 @@ export interface IData {
     title: string
     description: string
 }
+
