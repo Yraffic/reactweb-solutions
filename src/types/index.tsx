@@ -15,8 +15,8 @@ export interface ICard {
 }
 
 export interface IAppcontext {
-    openModal: boolean
-    setOpenModal: (value: boolean)=> void
+    name: string
+    setName: (value: string)=> void
 }
 
 export interface IChildren {

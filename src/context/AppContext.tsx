@@ -5,11 +5,11 @@ import { IAppcontext, IChildren } from "../types"
 export const AppContext = createContext({} as IAppcontext)
 
 export const AppContextProvider = ({ children }: IChildren) => {
-    const [openModal, setOpenModal] = useState<boolean>(false)
+    const [name, setName] = useState<string>('')
 
     const value = {
-        openModal,
-        setOpenModal
+        name,
+        setName
     }
   return (
     <AppContext.Provider value={value}>
