@@ -6,6 +6,12 @@ header {
 
     border-bottom: 0.03rem solid var(--black-100) ;
     
+    .manutenção{
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+
     .conteiner-nav {
         width: 100vw;
         
